@@ -1,0 +1,42 @@
+**Task:**
+You will be provided with a reference to a historical event (e.g., a name, a brief phrase). Your goal is to generate:
+1.  A **Title** for this event.
+2.  A **Summary Description** of this event.
+
+**Input:**
+The historical event reference will be provided after "Event:".
+
+**Output Requirements:**
+
+1.  **Title:**
+    *   **Conciseness & Clarity:** Should be short, yet sufficiently explanatory to clearly identify the event.
+    *   **Style:** Emulate the style of a Wikipedia article title (e.g., "Battle of Waterloo", "Apollo 11 Moon Landing", "Discovery of Penicillin").
+    *   **Neutrality:** Maintain a neutral and objective tone.
+
+2.  **Summary Description:**
+    *   **Length:** A single, well-structured paragraph, aiming for approximately 3-5 sentences.
+    *   **Content:**
+        *   Objectively describe the core nature of the event (what happened).
+        *   Briefly mention key actors, groups, or figures involved.
+        *   Touch upon the immediate context, cause, or primary significance of the event.
+    *   **Tone & Style:**
+        *   Maintain a neutral, factual, and encyclopedic tone.
+        *   Ensure the language is accessible to a general audience, avoiding overly academic jargon unless essential and briefly explained.
+    *   **Accuracy:** Ensure the information presented is historically accurate.
+
+**Output Format:**
+Please structure your response as follows:
+
+Title: [Your Generated Title]
+Summary: [Your Generated Summary Description]
+
+---
+Example:
+
+Event: The fall of the Berlin Wall
+
+Title: Fall of the Berlin Wall
+Summary: The fall of the Berlin Wall on November 9, 1989, was a pivotal event in world history, marking the symbolic end of the Cold War. East German authorities unexpectedly announced that citizens could freely cross into West Berlin, leading to spontaneous celebrations and people from both sides dismantling sections of the wall. This event paved the way for German reunification and signified a major shift in the geopolitical landscape of Europe.
+--- 
+
+Event: {event}

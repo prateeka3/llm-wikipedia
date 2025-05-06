@@ -1,0 +1,43 @@
+**Context:**
+An AI was tasked with generating a title and a summary description for a given historical event, based on a detailed prompt. The aim was to produce a Wikipedia-style title and a concise, factual, and informative summary.
+
+**Input Event provided to the AI:**
+{question}
+
+**AI's Generated Output (Title and Summary):**
+{answer}
+
+**Your Task as Evaluator:**
+Evaluate the AI's generated output based on its adherence to the target qualities (Wikipedia-style title; concise, factual, comprehensive summary). Consider the following rubric and provide a grade from 1 to 5.
+
+**Evaluation Rubric & Grading Scale:**
+
+*   **GRADE: 5 (Excellent)**
+    *   **Title:** Perfect. Accurately identifies the event, is concise, highly explanatory, strictly adheres to a neutral Wikipedia-style, and is free of any bias.
+    *   **Summary:** Perfect. A single, well-structured paragraph of ideal length (approx. 3-5 sentences). Comprehensively and accurately covers the core nature of the event, key actors/groups, and immediate context/cause/significance. The tone is strictly neutral, factual, encyclopedic, and easily accessible. No historical inaccuracies.
+    *   **Relevance:** The title and summary are perfectly aligned with the input event. If the input event was ambiguous or not a standard event name, the AI made a highly logical and accurate interpretation.
+
+*   **GRADE: 4 (Good)**
+    *   **Title:** Good. Accurately identifies the event and is largely concise, explanatory, neutral, and in Wikipedia style. May have a minor imperfection (e.g., slightly less concise than ideal, or style is very close but not perfectly Wikipedia).
+    *   **Summary:** Good. A well-structured paragraph, generally meeting length requirements. Covers the core nature, key actors, and context/significance well. Tone is appropriate and largely neutral, factual, and accessible. Information is historically accurate. May have minor areas for improvement (e.g., one aspect of content slightly less developed).
+    *   **Relevance:** The title and summary clearly and accurately address the input event.
+
+*   **GRADE: 3 (Average/Needs Improvement)**
+    *   **Title:** Acceptable but with noticeable flaws. May be somewhat vague, too long/short, style deviates somewhat from Wikipedia (e.g., a bit too informal or opinionated), or shows slight, unintentional bias. May not fully capture the essence of the event.
+    *   **Summary:** Acceptable but with noticeable flaws. May be too short/long, or miss one key content element (e.g., context or significance is poorly addressed or absent). Tone might be inconsistent (e.g., slightly informal, contains mild opinions, or uses some jargon without explanation). May contain minor historical inaccuracies that don't fundamentally mislead.
+    *   **Relevance:** Addresses the input event but might be somewhat tangential, misinterpret a nuance, or if the input was ambiguous, the interpretation is only partially successful.
+
+*   **GRADE: 2 (Poor/Significant Improvement Needed)**
+    *   **Title:** Significantly flawed. May be misleading, very unclear/ambiguous, use an inappropriate style (e.g., overly sensational, highly opinionated), or exhibit clear bias. The title struggles to identify the event correctly.
+    *   **Summary:** Significantly flawed. Far too short/long, missing multiple key content elements, or provides a superficial account. Tone is largely inappropriate (e.g., very informal, heavily opinionated, difficult to understand). Contains notable historical inaccuracies.
+    *   **Relevance:** Poorly addresses the input event. The title and/or summary are substantially off-topic. If the input was "not actually an event," the AI failed to make a reasonable interpretation or generate a relevant title/summary for an implied event.
+
+*   **GRADE: 1 (Very Poor/Unacceptable)**
+    *   **Title:** Completely off-topic, nonsensical, irrelevant to the input event, or absent when one was clearly required.
+    *   **Summary:** Completely off-topic, nonsensical, extremely brief and uninformative (e.g., one or two words), contains gross historical inaccuracies, or is absent.
+    *   **Relevance:** The title and summary do not address the input event at all. The AI's output is fundamentally unusable. This grade also applies if the input event is not a recognizable event, and the AI made no reasonable attempt to interpret or address it.
+
+**Instructions for Your Response:**
+First, write out in a step-by-step manner your reasoning for the grade. Explicitly assess the title and summary against the criteria mentioned above (clarity, conciseness, neutrality, style, content coverage, accuracy, relevance to the original event).
+Avoid simply stating the correct answers at the outset.
+Then, conclude with your final grade formatted as 'GRADE: $NUMBER' (without quotes), where NUMBER is one of 1, 2, 3, 4, or 5.
